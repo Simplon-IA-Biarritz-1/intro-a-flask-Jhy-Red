@@ -1,0 +1,14 @@
+<!doctype html>
+	<html lang="fr">
+		<head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+			<meta charset="utf-8">
+			<title>Database - Statistique</title>
+		</head>
+		<body>
+      <p>la base de donnée dispose de {{longueur}} utilisateurs.</p>
+	  <p>elle est composée de : {{homme}} hommes</p>
+	  <p>elle est composée de :{{femme}} femmes</p>
+      <div align="right"><a href='/'>Retour à la page précedente</a></div>
+		</body>
+	</html>
