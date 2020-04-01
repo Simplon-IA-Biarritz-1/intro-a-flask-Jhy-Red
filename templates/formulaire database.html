@@ -1,0 +1,24 @@
+<!doctype html>
+	<html lang="fr">
+		<head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+			<meta charset="utf-8">
+			<title>FormulaireSQL - Création de compte</title>
+		</head>
+		<body>
+			<form method="POST">
+					<label>Nom</label> : <input type="text" name="nom" />
+          <label>Prénom</label> : <input type="text" name="prenom" />
+          <label>Sexe</label> :
+          <select name="sexe_list">
+            <option value ="Homme">Homme</option>
+            <option value ="Femme">Femme</option>
+            </select>             
+          <label>Pseudo</label> : <input type="text" name="pseudo" />
+          <input type="submit" value="Création !" />
+      </form>
+      <h2>Bonjour {{titre}} {{prenom}} {{nom}}, votre nom d'utilisateur est {{pseudo}}.</h2>
+      <h2>Bienvenu a {{pseudo}} !</h2>
+      <div align="right"><a href='/'>Retour à la page précedente</a></div>
+		</body>
+	</html>
